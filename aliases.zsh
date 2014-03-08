@@ -11,5 +11,9 @@ alias chgrp='chgrp --preserve-root'
 alias nano='nano -wm'
 alias ln='ln -i'
 
+find () {
+	command find $@ ! -path "/.snapshots/*"
+}
+
 #alias tail='grc tail'
 #alias sudo='sudo '  # Allow aliases using sudo
