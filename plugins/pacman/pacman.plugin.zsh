@@ -1,7 +1,12 @@
-# Default to using yaourt if it is installed
-if $(which yaourt &> /dev/null); then
-	export pacman_program=$(which yaourt)
+# Default to using pacaur if it is installed
+if $(which pacaur &> /dev/null); then
+	export pacman_program=$(which pacaur)
 fi
+
+# Default to using yaourt if it is installed
+#if $(which yaourt &> /dev/null); then
+#	export pacman_program=$(which yaourt)
+#fi
 
 # Alias all pacman calls to pacmatic
 alias pacman='pacmatic'
