@@ -2,7 +2,7 @@
 alias mkdir='mkdir -p'
 alias rm='rm --one-file-system -Iv'
 alias mv='mv -i'
-alias cp='cp -iv'
+alias cp='cp --reflink=auto -iv'
 alias mv='mv -iv'
 alias ping='ping -c 4'
 alias chown='chown --preserve-root'
