@@ -1,13 +1,13 @@
 ## Safe command line utilities
 alias mkdir='mkdir -p'
-alias rm='rm --one-file-system -Iv'
+alias rm='rm -v'
 alias mv='mv -i'
-alias cp='cp --reflink=auto -iv'
+alias cp='cp -iv'
 alias mv='mv -iv'
 alias ping='ping -c 4'
-alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
+alias chown='chown'
+alias chmod='chmod'
+alias chgrp='chgrp'
 alias nano='nano -wm'
 alias ln='ln -i'
 
